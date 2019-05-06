@@ -1,131 +1,112 @@
-# Session 1 : Python: basics
+# Session 2 : Python basics
 
-Date: 5/5/2019
+Date: 6/5/2019
 
-local variable:
+docstring:
 ```
-defined inside the function
-scope: inside the function
-we can't access out side of function
-```
+    commenting the function
+    eg:
+    def funcName():
+        """
+        Comments
+        """
+        #do the stuff
 
-globalvar:
-```
-defined outside of function
-sope: global
-we can access anywhere in the file (inside the funct as well)
 ```
 
-arrays:
+function identifier:
 ```
-syntax:
-arr1 = [1, 2, 3]
-names = ["Gopal", "Sol", 2, 4]
+naming convension: 
+should contain: a-z, A-Z, 0-9, _
+should start with digits: 0-9
 
-accessing using index
-names[0]
+correct:
+_name, sal_age,
 
-updating the values
-names[0] = "Ram"
-```
+incorrect:
+3name
 
+we should not use keywords 
+eg: def, global, class
 
-Tuple:
-```
-what is the difference b/n list and tuple
-immutable: we can t update the value once defined
-
-syntax:
-tuple1 = (1, 2, 3)
+[link] (https://www.programiz.com/python-programming/keyword-list)
 ```
 
-set:
-```
-what's the difference b/n set and list
-diff: set does'nt contains duplicates elements
-syntax:
-set1 = {1, 2, 3}
 
-to convert list to set:
-method: set(list)
-
-eg:
-list1  = [1, 2, 2, 3, 3]
-
-mySet = set(list1)
-```
-
-dictionay:
+func with arguments/parameters:
 ```
 syntax:
-dict = {key: value}
-
-eg:
-dict = {
-    name: "Gopal",
-    sal: 200
-}
-
-accessing value from the dict using key
-dict[sal]
-```
-
-operators:
-```
-conditional:
-assignment:  =
-arithmetic: +, - , *, / , %
-logical: &&, ||
-comparison: >, <, >=, <=, ==
-bitwise
-```
-
-conditions:
-```
-if
-if else
-if elif else   // elseif
-```
-
-```
-if:
-syntax:
-if condition:
-    statements
-
-
-if else:
-if condition:
-    statements
-else:
-    statements
-
-if elif else:
-syntax:
-if condition:
-    #do something
-elif condition:
+def funcName(arg1):
     #do the stuff
-else:
-    #do the stuff
+
+funcName("Gopal")
+funcName(2)
+
+
+arguments/parametes:
+
+function should contain 0 arguments, 1 or more than one arguments
 ```
 
-loops:
-```
-for, forEach, while, switch
 
-for:
-for(initialization, condition, increment/decrement) {
-    #code
-    
-}
+types of functions:
+```
+1. Built in 
+
+set(), print(), 
+
+[Built in func list]( https://www.programiz.com/python-programming/methods/built-in )
+
+2. Custom functions
 ```
 
-while:
+anonymous functions:
 ```
-initialize
-while condition:
-    statement
-    incremet/decream
+normal funct: def key
+anonymous: no name
+
+lambda keyword:
+
+syntax: lambda arg: expression
+
+what is the difference b/n normal function and anonymous function
+
+* interview quesiton
+map(), reduce(), and filter()
 ```
+map():
+```
+syntax:
+a built in func witch will take 2 parameters
+    1. a function (lamda function)
+    2. a list
+```
+
+****************************Work***************************
+anonymous func
+
+map(), reduce(), filter()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
