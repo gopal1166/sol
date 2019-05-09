@@ -1,91 +1,36 @@
-# Session 2 : Python basics
+# Session 3 : Python basics: classes. constructor & global keyword
 
-Date: 6/5/2019
+Date: 9/5/2019:
 
-docstring:
+classes:
 ```
-    commenting the function
-    eg:
-    def funcName():
-        """
-        Comments
-        """
-        #do the stuff
+keyword: class
 
-```
-
-function identifier:
-```
-naming convension: 
-should contain: a-z, A-Z, 0-9, _
-should start with digits: 0-9
-
-correct:
-_name, sal_age,
-
-incorrect:
-3name
-
-we should not use keywords 
-eg: def, global, class
-
-[link] (https://www.programiz.com/python-programming/keyword-list)
-```
-
-
-func with arguments/parameters:
-```
 syntax:
-def funcName(arg1):
-    #do the stuff
+class ClassName:
+    #properties
+    #functions 
 
-funcName("Gopal")
-funcName(2)
-
-
-arguments/parametes:
-
-function should contain 0 arguments, 1 or more than one arguments
+create instance and access properties & funcs using that instance outside of class
 ```
 
 
-types of functions:
+constructor: 
 ```
-1. Built in 
+    in java: name of class, capital, paramters, define variables, only one,
+    we no need to call
 
-set(), print(), 
+    in python:
+        a special func: will be executed automatically the moment when the new instance
+        of the class created
+        constructor func: __init__():
+        parameters: __init__(self, name, age)
+        define the variables:
 
-[Built in func list]( https://www.programiz.com/python-programming/methods/built-in )
-
-2. Custom functions
-```
-
-anonymous functions:
-```
-normal funct: def key
-anonymous: no name
-
-lambda keyword:
-
-syntax: lambda arg: expression
-
-what is the difference b/n normal function and anonymous function
-
-* interview quesiton
-map(), reduce(), and filter()
-```
-map():
-```
-syntax:
-a built in func witch will take 2 parameters
-    1. a function (lamda function)
-    2. a list
+        we can acces these variables
 ```
 
-****************************Work***************************
-anonymous func
-
-map(), reduce(), filter()
+`global keyword: To update the value of teh variable inside of the function`
 
 
 
