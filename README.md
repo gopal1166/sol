@@ -1,36 +1,39 @@
-# Session 3 : Python basics: classes. constructor & global keyword
+# Session 4 : Python basics: classes. inheritance
 
-Date: 9/5/2019:
+Date: 12/5/2019:
 
-classes:
-```
-keyword: class
+Inheritance: passing from parent to child
 
 syntax:
-class ClassName:
-    #properties
-    #functions 
+```
+class Parent:
+    Body of class
 
-create instance and access properties & funcs using that instance outside of class
+class Child:
+    Body of class
+    can I access parent function here?
+
+create instance of child
+
+access both child and parent props, funcs using this instance
 ```
 
+multi-level instance:
 
-constructor: 
+syntax:
 ```
-    in java: name of class, capital, paramters, define variables, only one,
-    we no need to call
+    class A:
+        pass
+    class B(A):
+        pass
+    class C(B):
+        pass
 
-    in python:
-        a special func: will be executed automatically the moment when the new instance
-        of the class created
-        constructor func: __init__():
-        parameters: __init__(self, name, age)
-        define the variables:
+create child instance
 
-        we can acces these variables
+using this instance we can access 
 ```
 
-`global keyword: To update the value of teh variable inside of the function`
 
 
 
