@@ -1,11 +1,11 @@
-# Session 5 : Python basics: multiple inheritance
+# Session 5 : Python basics: multiple inheritance, method overriding
 
 Date: 13/5/2019:
 
 multiple inheritance
 
 syntax:
-
+```
 one class can inherit many classes
 
 class A:
@@ -15,7 +15,7 @@ class B:
 
 class C(A, B):
     pass
-
+```
 
 Method overriding:
 
@@ -34,9 +34,11 @@ class A:
 class B:
     def myFunc(self):
         statements
-
+```
 
 Method overloading:
+
+Python doesn't support method overloading, but we can use though the latest defined function
 
 flow:
 ```
