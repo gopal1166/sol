@@ -1,39 +1,66 @@
-# Session 4 : Python basics: classes. inheritance
+# Session 5 : Python basics: multiple inheritance
 
-Date: 12/5/2019:
+Date: 13/5/2019:
 
-Inheritance: passing from parent to child
+multiple inheritance
+
+syntax:
+
+one class can inherit many classes
+
+class A:
+    pass
+class B:
+    pass
+
+class C(A, B):
+    pass
+
+
+Method overriding:
+
+flow:
+```
+parent, child class
+define functions with the same name in both classes
+```
 
 syntax:
 ```
-class Parent:
-    Body of class
+class A:
+    def myFunc(self):
+        statements
 
-class Child:
-    Body of class
-    can I access parent function here?
+class B:
+    def myFunc(self):
+        statements
 
-create instance of child
 
-access both child and parent props, funcs using this instance
+Method overloading:
+
+flow:
 ```
+in one class
+define a function n give parameters
 
-multi-level instance:
+define another func with same name n define different paramters
+
+we can call this fucntion in many ways
+```
 
 syntax:
 ```
-    class A:
+class A:
+    def myFunc(self):
         pass
-    class B(A):
-        pass
-    class C(B):
+    
+    def myFunc(self, name):
         pass
 
-create child instance
+    def myFunc(self, name, age):
+        pass
 
-using this instance we can access 
 ```
-
 
 
 
