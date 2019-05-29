@@ -1,131 +1,85 @@
-# Session 1 : Python: basics
+# Session 7 : Django: Getting started
 
-Date: 5/5/2019
+Date: 29/5/2019
 
-local variable:
-```
-defined inside the function
-scope: inside the function
-we can't access out side of function
-```
-
-globalvar:
-```
-defined outside of function
-sope: global
-we can access anywhere in the file (inside the funct as well)
-```
-
-arrays:
-```
-syntax:
-arr1 = [1, 2, 3]
-names = ["Gopal", "Sol", 2, 4]
-
-accessing using index
-names[0]
-
-updating the values
-names[0] = "Ram"
-```
+install:
+    python, 
+    django, 
+    mod header chrome extension, 
+    postman api client
 
 
-Tuple:
-```
-what is the difference b/n list and tuple
-immutable: we can t update the value once defined
+creating django project:
 
-syntax:
-tuple1 = (1, 2, 3)
-```
+`django-amdin startproject 'project name'`
 
-set:
-```
-what's the difference b/n set and list
-diff: set does'nt contains duplicates elements
-syntax:
-set1 = {1, 2, 3}
-
-to convert list to set:
-method: set(list)
-
-eg:
-list1  = [1, 2, 2, 3, 3]
-
-mySet = set(list1)
-```
-
-dictionay:
-```
-syntax:
-dict = {key: value}
-
-eg:
-dict = {
-    name: "Gopal",
-    sal: 200
-}
-
-accessing value from the dict using key
-dict[sal]
-```
-
-operators:
-```
-conditional:
-assignment:  =
-arithmetic: +, - , *, / , %
-logical: &&, ||
-comparison: >, <, >=, <=, ==
-bitwise
-```
-
-conditions:
-```
-if
-if else
-if elif else   // elseif
-```
+project folder structure:
 
 ```
-if:
-syntax:
-if condition:
-    statements
+a folder with same name as project name
+init: 
+settings: 
+    add apps
+    database configuration
+    static files settings
+    middleware settings
 
+urls: (main url config)
+    we'll define urls
+    we'll include other app's urls
 
-if else:
-if condition:
-    statements
-else:
-    statements
+manage: to manage our project: 
+        creating apps, 
+        creating superuser, 
+        migrating the database,
+        django shell: django ORM
+``
 
-if elif else:
-syntax:
-if condition:
-    #do something
-elif condition:
-    #do the stuff
-else:
-    #do the stuff
+start the development server:
+```
+$ python manage.py runserver
 ```
 
-loops:
-```
-for, forEach, while, switch
+virutalenv: to isolate
 
-for:
-for(initialization, condition, increment/decrement) {
-    #code
-    
-}
+instagram:
+    python: 3
+
+anotherproject:
+    python: 2
+
+virutal environments:
+
+to intall virtualenv: `pip install virtualenv`
+
+to create virtualenv: 'virtualenv -p python3 "venv_name"'
+
+to activate: source venv_name/bin/activate
+
+To check list of packages: `pip freeze`
+
+To create app: `python manage.py startapp "app_name"`
+
+configure in settings.py file in installed_apps
+
+application structure:
+```
+admin.py: to register models with admin page
+models.py: to create tables 
+views.py:  to write the logic part
+
+urls.py: to map urls with the views
+
+tests.py: to write test cases
 ```
 
-while:
-```
-initialize
-while condition:
-    statement
-    incremet/decream
-```
+
+
+
+
+
+
+
+
+
 
