@@ -1,77 +1,91 @@
-# Session 7 : Django: Getting started
+# Session 7 : Django: Models, ORM
 
-Date: 29/5/2019
+Date: 31/5/2019
 
-install:
-    python, 
-    django, 
-    mod header chrome extension, 
-    postman api client
-
-
-creating django project:
-
-`django-amdin startproject 'project name'`
-
-project folder structure:
-
+model:
 ```
-a folder with same name as project name
-init: 
-settings: 
-    add apps
-    database configuration
-    static files settings
-    middleware settings
-
-urls: (main url config)
-    we'll define urls
-    we'll include other app's urls
-
-manage: to manage our project: 
-        creating apps, 
-        creating superuser, 
-        migrating the database,
-        django shell: django ORM
-``
-
-start the development server:
-```
-$ python manage.py runserver
+To create tables 
 ```
 
-virutalenv: to isolate
-
-instagram:
-    python: 3
-
-anotherproject:
-    python: 2
-
-virutal environments:
-
-to intall virtualenv: `pip install virtualenv`
-
-to create virtualenv: 'virtualenv -p python3 "venv_name"'
-
-to activate: source venv_name/bin/activate
-
-To check list of packages: `pip freeze`
-
-To create app: `python manage.py startapp "app_name"`
-
-configure in settings.py file in installed_apps
-
-application structure:
+syntax:
 ```
-admin.py: to register models with admin page
-models.py: to create tables 
-views.py:  to write the logic part
+class ModelName(models.Model):
+    create fields: columns
 
-urls.py: to map urls with the views
-
-tests.py: to write test cases
+    create functions as well
 ```
+
+migration: to create the tables in db
+```
+    1. create migration files
+    2. migrate the files to the database
+
+    1. migration file:
+        infomation about the table: table name, columns and data types of columns
+    
+        $ python manage.py makemigrations
+
+    2. to migrate: 
+        $ python manage.py migrate
+
+    **id will be added automatically to each table if we don't define explicity
+```
+
+amdin panel:
+```
+createsuper: `python manage.py createsuperuser`
+```
+
+To do anything 
+like creating, updating, retrieving and deleting the data
+
+we've register the model in admin
+```
+
+django ORM:
+```
+crud:
+
+create: ModelName.objects.create(fieldname='value')
+
+retrieve: ModelName.objects.all()
+
+to retrive/get only record: ModelName.objects.get(id=)
+
+updating:
+    1. get the record instance:
+        instance = ModelName.objects.get(id=)
+    2. instance.field_name = "new value"
+    3. instance.save()    # to reflect the update in database
+
+delete: 
+    1. get the record instance:
+        instance = ModelName.objects.get(id=)
+    2. delete the install:
+        instance.delete
+
+quick recap:
+```
+created models, migrations, migrate, 
+CRUD table records using django ORM in django shell
+
+To acces sthe django shell:
+    $ python manage.py shell
+
+created super user
+```
+
+Task:
+```
+create a table and play around using django ORM
+```
+
+filter
+lookup
+admin panel usage
+
+
+
 
 
 
